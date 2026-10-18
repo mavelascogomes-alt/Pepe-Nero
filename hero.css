@@ -1,0 +1,40 @@
+﻿.hero { position: relative; background: var(--background); color: var(--cream); overflow: clip; }
+.hero__photo-frame { position: relative; overflow: hidden; }
+.hero__photo-frame::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 -1px;
+  height: 90%;
+  background: linear-gradient(
+    to bottom,
+    rgba(23, 23, 21, 0) 0%,
+    rgba(23, 23, 21, .02) 12%,
+    rgba(23, 23, 21, .09) 28%,
+    rgba(23, 23, 21, .27) 46%,
+    rgba(23, 23, 21, .56) 64%,
+    rgba(23, 23, 21, .82) 79%,
+    rgba(23, 23, 21, .97) 92%,
+    rgba(23, 23, 21, .995) 98%,
+    var(--background) 100%
+  );
+  pointer-events: none;
+}
+.hero__cinema { position: relative; transform: translate3d(0, calc(var(--scene-shift, 0px) * .2), 0); }
+.hero__image { display: block; width: 100%; height: auto; }
+.hero__copy { width: 88%; margin: 0 auto; padding: 30px 0 40px; }
+.hero__tagline { font-size: clamp(30px, 3vw, 52px); line-height: 1.12; }
+.hero__tagline em { color: var(--gold); }
+.hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.hero .hero__cta { display: inline-flex; align-items: center; justify-content: center; gap: 24px; min-height: 48px; padding: 15px 22px; border: 1px solid #f3e8d53d; border-radius: 3px; font: 12px/1.2 Arial, sans-serif; letter-spacing: .02em; color: var(--cream); text-decoration: none; }
+.hero .hero__cta--primary { color: #23261e; background: var(--cream); border-color: var(--cream); }
+.hero__cta--primary:hover { background: #dfc59c; }
+.hero__cta:disabled { color: #c7bbab; cursor: default; }
+.hero a:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
+.hero__reservation-status { margin-top: 12px; color: var(--muted); font: 11px/1.5 Arial, sans-serif; }
+.hero__steam { position: absolute; width: 15%; height: 22%; left: 65%; top: 43%; opacity: .22; pointer-events: none; }
+.hero__steam i { position: absolute; bottom: 0; left: 24%; width: 15%; height: 85%; border-left: 2px solid #f4e8d45c; border-radius: 50%; filter: blur(6px); animation: steam-rise 6s ease-in-out infinite; }
+.hero__steam i:nth-child(2) { left: 48%; height: 70%; animation-delay: -2s; }
+.hero__steam i:nth-child(3) { left: 66%; height: 90%; animation-delay: -4s; }
+@keyframes steam-rise { 0% { opacity: 0; transform: translateY(18px); } 35% { opacity: .55; } 100% { opacity: 0; transform: translate(-12px, -40px); } }
+@media (max-width: 700px) { .hero__copy { text-align: center; padding-top: 24px; } .hero__actions { justify-content: center; } }
+@media (prefers-reduced-motion: reduce) { .hero__cinema { transform: none; } .hero__steam { display: none; } }

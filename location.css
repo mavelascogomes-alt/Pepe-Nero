@@ -1,0 +1,25 @@
+.location { position: relative; isolation: isolate; overflow: hidden; width: min(600px, 88%); margin: 24px auto 64px; padding: 34px; border: 1px solid #c7a36042; border-radius: 30px; background: radial-gradient(ellipse at 100% 20%, #95764824, transparent 62%), linear-gradient(145deg, #252821, #1a1c17 70%); box-shadow: 0 24px 70px -35px #000c, inset 0 1px 0 #f3e8d50c; }
+.location::before { content: ""; position: absolute; top: -1px; left: 18%; width: 64%; height: 1px; background: linear-gradient(90deg, transparent, #ead1a799, transparent); }
+.location__topline { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.location .eyebrow { color: #d3b987; font: 9px/1.5 Arial, sans-serif; letter-spacing: .2em; }
+.location__city { display: inline-flex; align-items: center; gap: 7px; padding: 7px 10px; border: 1px solid #c7a3602e; border-radius: 30px; color: #c7c7b8; font: 10px/1.2 Arial, sans-serif; }
+.location__city::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: #c7a360; box-shadow: 0 0 10px #c7a36040; }
+.location__intro { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin: 27px 0; }
+.location h2 { font-size: clamp(38px, 4vw, 52px); font-weight: 400; line-height: .98; letter-spacing: -.035em; }
+.location h2 em { color: #dbc399; font-weight: 400; }
+.location__pin { position: relative; display: grid; place-items: center; flex: 0 0 88px; height: 88px; margin-right: 18px; border: 1px solid #d3b98745; border-radius: 28px; transform: rotate(10deg); background: linear-gradient(145deg, #8b764739, #21251b); box-shadow: inset 0 1px 0 #eee5d318, 0 14px 30px -15px #000b; color: #e0c897; }
+.location__pin svg { position: relative; z-index: 1; transform: rotate(-10deg); filter: drop-shadow(0 3px 5px #0005); }
+.location__pin::before { content: ""; position: absolute; inset: -14px; border: 1px solid #c7a36018; border-radius: 36px; transform: rotate(-20deg); }
+.location__pin::after { content: ""; position: absolute; inset: -26px; border: 1px solid #c7a3600c; border-radius: 42px; transform: rotate(-32deg); }
+.location address { padding-top: 23px; border-top: 1px solid #c7a36026; color: #b9baac; font: 13px/1.9 Arial, sans-serif; font-style: normal; }
+.location address strong { display: inline-block; margin-bottom: 4px; color: var(--cream); font-weight: 400; font-size: 14px; }
+.location__actions { display: flex; margin-top: 26px; }
+.location__actions > a { position: relative; isolation: isolate; overflow: hidden; display: flex; flex: 1; align-items: center; justify-content: space-between; gap: 16px; min-width: 0; min-height: 64px; padding: 12px 14px 12px 20px; border: 1px solid #e8dcc1; border-radius: 18px; background: linear-gradient(110deg, #eee5d3, #dfcdaa); color: #26281f; font: 13px/1.4 Arial, sans-serif; text-decoration: none; transition: box-shadow .25s, border-color .25s; -webkit-tap-highlight-color: transparent; }
+.location__actions small { display: block; margin-top: 3px; color: #60604f; font: 10px/1.4 Arial, sans-serif; }
+.location__arrow { display: grid; place-items: center; width: 36px; height: 36px; flex: 0 0 36px; border-radius: 50%; background: #272b21; color: #eee5d3; font-size: 19px; transition: transform .25s; }
+.location__actions > a:hover { box-shadow: 0 5px 25px -10px #dfcdaa70; border-color: #fff0d3; }
+.location__actions > a:hover .location__arrow { transform: rotate(45deg); }
+.location__actions > a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+.location__ripple { position: absolute; border-radius: 50%; background: #c7a360; pointer-events: none; }
+@media (max-width: 400px) { .location { padding: 24px; border-radius: 26px; } .location__intro { gap: 16px; margin: 30px 0; } .location h2 { font-size: clamp(34px, 10vw, 39px); } .location__pin { flex-basis: 64px; height: 64px; margin-right: 8px; border-radius: 22px; } .location__pin svg { width: 34px; height: 34px; } .location__pin::before { inset: -9px; border-radius: 28px; } .location__pin::after { inset: -17px; border-radius: 34px; } .location address { font-size: 12px; } .location address strong { font-size: 13px; } }
+@media (prefers-reduced-motion: reduce) { .location__actions > a, .location__arrow { transition: none; } .location__actions > a:hover .location__arrow { transform: none; } .location__ripple { display: none; } }

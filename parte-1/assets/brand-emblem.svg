@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <!-- Vector reconstruction for the 3D emblem; preserves the red oval and cream lettering. -->
+  <defs>
+    <radialGradient id="enamel" cx="42%" cy="30%" r="80%">
+      <stop stop-color="#b52e30"/><stop offset="1" stop-color="#851b22"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="600" cy="300" rx="590" ry="290" fill="#f3e8d5"/>
+  <ellipse cx="600" cy="300" rx="573" ry="273" fill="url(#enamel)"/>
+  <text x="600" y="325" text-anchor="middle" fill="#f3e8d5" font-family="Georgia, 'Times New Roman', serif" font-size="188" font-style="italic" letter-spacing="-8">Pepe Nero</text>
+  <path d="M365 375 Q600 401 835 375" fill="none" stroke="#d4b584" stroke-width="2"/>
+  <text x="600" y="437" text-anchor="middle" fill="#f3e8d5" font-family="Georgia, 'Times New Roman', serif" font-size="29" letter-spacing="7">RISTORANTE E PIZZERIA</text>
+</svg>

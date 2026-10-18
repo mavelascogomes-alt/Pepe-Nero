@@ -1,0 +1,18 @@
+Tool: built-in ImageGen, edit mode.
+Source: hero-pepe-nero.jpg
+Output: hero-sem-botao.jpg
+Prompt: Remove only the red Book a Table button, its gold border and shadow. Fill with matching rustic green and cream wall. Preserve the remaining banner, plate, lighting, text and logo.
+Integration: index.html applies the edited image through a feathered SVG mask restricted to the button area. The original photograph remains the base image, preserving all pixels outside the masked area.
+
+Additional edit: hero-sem-logo.jpg (built-in ImageGen).
+Prompt: Remove only the small oval Pepe Nero logo and white flourish in the bottom-right corner; restore the underlying plate rim and table while preserving the remaining photograph.
+Integration: a separate feathered SVG mask applies only the logo area. The button-removal patch remains in place; both edits preserve the original photo outside their masks.
+
+Additional edit: hero-benvenuti.png, web asset hero-benvenuti.jpg (built-in ImageGen, text-localization).
+Prompt: Use case: text-localization. Edit target: the referenced existing Pepe Nero hero banner. Change ONLY these two headline text lines: replace "Welcome to" with exact "Benvenuti" in the same elegant cream calligraphic style, and replace "Fine Dining Experience" with exact "Ristorante Pepe Nero" in the same large golden classic serif style. Keep the new text centered on the same left text block, entirely within x=90 to x=800 and y=95 to y=285 of the original 1446x736 canvas. Preserve the underlying rustic green/cream/red Italian wall, original text sizes and composition, English small subtitle, button, steak plate, wine glasses, candles, light and original bottom logo without other changes. Do not add any other text. Preserve full landscape aspect ratio and framing. Output high quality.
+Integration: only the headline area (x80 y92 width730 height204 on the 1446x736 original) uses this image through a feathered SVG mask. Existing button and logo removal patches remain active. Original plate, wine, candles and all other areas remain the original photograph. The same title is included as an accessible HTML h1 in Italian.
+2026-10-17 — Responsive HTML hero and asset simplification.
+Tool: built-in ImageGen, local lettering-removal edit only.
+Prompt: Use case: precise-object-edit. Edit target: existing Pepe Nero hero banner. Remove ONLY the baked text in the left headline area: Welcome to, Fine Dining Experience, and the small subtitle Savor the flavors of gourmet cuisine in an elegant ambiance. Reconstruct the rustic green and cream wall behind these letters continuously and naturally with matching texture and light. Do NOT change the steak plate, asparagus, wine glasses, candles, Italian flag texture, framing, lighting, red Book a Table button, or bottom-right logo. No new text, objects, illustrations or any creative change. Preserve exact original landscape aspect ratio and composition; it is a local lettering-removal patch for a real existing website photo, not a redesign.
+Generated source: hero-sem-texto-fonte.png.
+The text-removal area (x80,y90,width735,height250) was composited with the original photograph and the existing button/logo removal patches using their original feathered SVG masks. The result was flattened locally through the browser canvas and encoded as hero-clean-1446.jpg, hero-clean-900.jpg and hero-clean-480.jpg. No plate, wine or other area outside the specified masks was replaced. Final hero uses a single responsive image; headline/location are HTML, with no baked text duplication. Product thumbnails were resized/encoded from their existing originals. gastronomia-poster.jpg was extracted from the supplied video.

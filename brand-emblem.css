@@ -1,0 +1,12 @@
+.brand-bridge { display: flex; align-items: center; justify-content: center; gap: clamp(12px, 3vw, 44px); padding: 4px 6% 8px; background: var(--background); }
+.brand-bridge__line { height: 1px; flex: 1; max-width: 280px; background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--gold) 45%, transparent)); }
+.brand-bridge__line:last-child { transform: scaleX(-1); }
+.brand-bridge__stage { position: relative; flex: 0 1 260px; height: 132px; min-width: 0; background: radial-gradient(ellipse, #c7a3600a, transparent 68%); }
+.brand-bridge__stage::after { content: ""; position: absolute; width: 45%; height: 7px; left: 27.5%; bottom: 15%; border-radius: 50%; background: #0007; filter: blur(7px); pointer-events: none; }
+.brand-bridge__canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; }
+.brand-bridge.is-ready .brand-bridge__canvas { opacity: 1; }
+.brand-bridge__fallback { position: absolute; width: 150px; height: 75px; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.brand-bridge__fallback img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.brand-bridge.is-ready .brand-bridge__fallback { visibility: hidden; }
+.brand-bridge + .introduction { min-height: auto; padding-top: clamp(28px, 3vw, 56px); padding-bottom: clamp(56px, 7vw, 120px); }
+@media (max-width: 600px) { .brand-bridge { gap: 12px; padding: 0 6% 4px; } .brand-bridge__stage { flex-basis: 210px; height: 112px; } .brand-bridge__fallback { width: 136px; height: 68px; } }

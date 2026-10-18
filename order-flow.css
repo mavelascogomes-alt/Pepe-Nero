@@ -1,0 +1,49 @@
+.order-steps { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); list-style: none; gap: 8px; margin: 0; padding: 16px 24px; border-bottom: 1px solid #c7a36025; flex-shrink: 0; }
+.order-steps li { display: flex; flex-direction: column; align-items: center; gap: 7px; color: var(--muted); text-align: center; font: 10px/1.4 Arial,sans-serif; }
+.order-steps li > span { display: grid; place-items: center; width: 23px; height: 23px; border: 1px solid #c7a36040; border-radius: 50%; color: var(--muted); }
+.order-steps [aria-current] { color: var(--cream); }
+.order-steps [aria-current] > span { background: var(--gold); border-color: var(--gold); color: #1b1c17; }
+#order-data { padding: 24px 0 8px; }
+#order-details-form { font: 13px/1.5 Arial,sans-serif; }
+.order-field { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; color: var(--cream); font: 12px/1.5 Arial,sans-serif; }
+.order-field > span { color: var(--muted); }
+.order-field input, .order-field select, .order-field textarea { display: block; min-width: 0; width: 100%; min-height: 46px; padding: 12px; border: 1px solid #c7a36055; border-radius: 6px; background: #141511; color: var(--cream); font: 16px/1.5 Arial,sans-serif; }
+.order-field textarea { resize: vertical; }
+.order-field input::placeholder, .order-field textarea::placeholder { color: #aba696; font-size: 12px; }
+.order-field input:disabled { opacity: .4; }
+.order-fields-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 16px; margin-top: 18px; }
+.order-field--full { grid-column: 1 / -1; }
+.order-check { display: flex; align-items: center; gap: 9px; min-height: 44px; margin: -14px 0 14px; font: 12px/1.5 Arial,sans-serif; }
+.order-check input { width: 18px; height: 18px; accent-color: var(--gold); }
+.order-group { padding: 18px 0 8px; margin: 8px 0 22px; border: 0; border-top: 1px solid #c7a36030; min-width: 0; }
+.order-group legend { padding-right: 12px; color: #d6bc89; font: 14px/1.5 Arial,sans-serif; }
+.order-hint { margin: 0 0 14px; color: var(--muted); font: 12px/1.65 Arial,sans-serif; }
+.order-pickup { margin-top: 18px; padding: 18px; border: 1px solid #c7a36030; border-radius: 12px; background: #c7a36006; }
+.order-pickup h3 { margin-bottom: 12px; font: 14px/1.5 Arial,sans-serif; font-weight: 400; color: var(--cream); }
+.order-pickup address { font: 12px/1.8 Arial,sans-serif; font-style: normal; color: var(--muted); }
+.order-pickup address strong { font-weight: 400; color: var(--cream); }
+.order-pickup a { display: inline-flex; align-items: center; gap: 14px; min-height: 44px; margin-top: 10px; color: var(--gold); text-underline-offset: 4px; }
+#order-cash { padding-top: 14px; }
+.order-validation { margin: 12px 0; color: #e2c58f; font: 12px/1.6 Arial,sans-serif; }
+.order-validation:empty { display: none; }
+#cart-review { padding-top: 24px; }
+#cart-review h3 { font-size: 29px; }
+.order-review-items { padding: 0; margin: 20px 0 24px; list-style: none; }
+.order-review-items li { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; padding: 14px 0; border-bottom: 1px solid #c7a36025; font: 13px/1.5 Arial,sans-serif; }
+.order-review-items li > div { min-width: 0; }
+.order-review-items strong { font-weight: 400; overflow-wrap: anywhere; }
+.order-review-items small { display: block; margin-top: 6px; color: var(--muted); font: 11px/1.5 Arial,sans-serif; }
+.order-review-items li > span { flex-shrink: 0; color: #d6bc89; white-space: nowrap; }
+.order-review-data, .order-review-amounts { display: grid; grid-template-columns: 92px minmax(0,1fr); gap: 14px; margin: 0 0 24px; font: 13px/1.65 Arial,sans-serif; }
+.order-review-data dt, .order-review-amounts dt { color: var(--muted); }
+.order-review-data dd, .order-review-amounts dd { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.order-review-amounts { grid-template-columns: minmax(0,1.5fr) minmax(0,1fr); padding: 22px 0; border-top: 1px solid #c7a36040; border-bottom: 1px solid #c7a36040; }
+.order-review-amounts dd { text-align: right; color: #d6bc89; }
+.order-review-amounts dt:last-of-type, .order-review-amounts dd:last-of-type { color: var(--cream); }
+.order-review-edit { display: flex; flex-wrap: wrap; gap: 10px; }
+.order-review-edit .cart-edit { flex: 1; }
+.cart-handoff { margin-top: 14px; text-align: center; }
+.cart-open .cart-toggle, .reservation-open .cart-toggle { visibility: hidden; }
+@media(max-width:600px) { .order-steps { padding: 14px 18px; } .order-review-data { grid-template-columns: 80px minmax(0,1fr); } }
+@media(max-width:360px) { .order-fields-grid { grid-template-columns: 1fr; gap: 0; } .order-field--full { grid-column: auto; } .order-review-items li { gap: 10px; font-size: 12px; } .order-review-data, .order-review-amounts { font-size: 12px; gap: 12px; } }
+@media(max-height:600px) { .order-steps { padding: 9px 18px; } .order-steps li { flex-direction: row; justify-content: center; font-size: 9px; gap: 5px; } .order-steps li > span { width: 18px; height: 18px; flex-shrink: 0; } }

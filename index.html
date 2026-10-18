@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pepe Nero — Ristorante e Pizzeria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="hero.css"><link rel="stylesheet" href="brand-emblem.css"><link rel="stylesheet" href="cart.css"><link rel="stylesheet" href="reservations.css"><link rel="stylesheet" href="location.css">
+<meta name="description" content="Pepe Nero Ristorante e Pizzeria em Planaltina, Brasília. Consulte o cardápio e prepare solicitações de pedido e reserva pelo WhatsApp. Todos os dias, das 11h às 23h30.">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Pepe Nero Ristorante e Pizzeria">
+<meta property="og:title" content="Pepe Nero — Ristorante e Pizzeria em Planaltina"><meta property="og:description" content="Pepe Nero Ristorante e Pizzeria em Planaltina, Brasília. Consulte o cardápio e prepare solicitações de pedido e reserva pelo WhatsApp. Todos os dias, das 11h às 23h30.">
+<!-- Use an absolute og:image URL and canonical only after the public domain is confirmed. -->
+<meta property="og:image" content="assets/hero-clean-1446.jpg"><meta property="og:image:alt" content="Prato do hero do Pepe Nero, com vinho e iluminação quente"><meta property="og:image:width" content="1446"><meta property="og:image:height" content="736">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Pepe Nero — Ristorante e Pizzeria"><meta name="twitter:description" content="Pepe Nero Ristorante e Pizzeria em Planaltina, Brasília. Consulte o cardápio e prepare solicitações de pedido e reserva pelo WhatsApp. Todos os dias, das 11h às 23h30."><meta name="twitter:image" content="assets/hero-clean-1446.jpg">
+<link rel="stylesheet" href="improvements.css"><link rel="stylesheet" href="order-flow.css"><link rel="stylesheet" href="house.css">
+<script>if(new URLSearchParams(location.search).get('modo')==='mesa')document.documentElement.classList.add('table-menu');</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Pepe Nero Ristorante e Pizzeria", "description": "Pepe Nero Ristorante e Pizzeria em Planaltina, Brasília. Consulte o cardápio e prepare solicitações de pedido e reserva pelo WhatsApp. Todos os dias, das 11h às 23h30.", "telephone": "+55 61 99553-0777", "servesCuisine": ["Italiana", "Pizza"], "address": {"@type": "PostalAddress", "streetAddress": "Praça Coronel Salviano Monteiro, Quadra 56 Lote 2, St. Tradicional", "addressLocality": "Planaltina, Brasília", "addressRegion": "DF", "postalCode": "73330-151", "addressCountry": "BR"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "11:00", "closes": "23:30"}], "sameAs": ["https://www.instagram.com/pepeneroristorante/"]}</script>
+</head>
+<body><a class="skip-link" href="#cardapio">Pular para o cardápio</a>
+<header class="site-nav">
+  <div class="site-nav__quick"><a class="site-nav__brand" href="#inicio">Pepe Nero</a><nav aria-label="Acesso rápido"><button type="button" data-open-reservation aria-haspopup="dialog" aria-controls="reservation-dialog">Reservar</button><a href="https://wa.me/5561995530777" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="#localizacao">Localização</a></nav></div>
+  <nav class="category-nav" aria-label="Categorias do cardápio"><a href="#cardapio">Entradas</a><a href="#pratos-principais">Pratos principais</a><a href="#pratos-exclusivos">Pratos exclusivos</a><a href="#pizzas">Pizzas</a><a href="#sobremesas">Sobremesas</a><a href="#bebidas">Bebidas</a></nav>
+</header>
+<main id="inicio">
+<div class="table-menu__notice"><p>Cardápio para consulta</p><span>Consulte os produtos e preços. Para dúvidas, fale com a equipe do restaurante.</span><a href="index.html#cardapio">Voltar ao site completo</a></div>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__photo-frame">
+    <div class="hero__cinema" aria-hidden="true">
+      <img class="hero__image" src="assets/hero-clean-1446.jpg" srcset="assets/hero-clean-480.jpg 480w, assets/hero-clean-900.jpg 900w, assets/hero-clean-1446.jpg 1446w" sizes="100vw" alt="" width="1446" height="736" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero__heading"><p class="hero__welcome" lang="it">Benvenuti</p><h1 id="hero-title"><span lang="it">Ristorante</span> Pepe Nero</h1><p class="hero__place">Planaltina · Brasília, DF</p></div>
+    <div class="hero__steam" aria-hidden="true"><i></i><i></i><i></i></div>
+  </div>
+    <div class="hero__copy">
+      <p class="hero__tagline">O próximo bom momento<br>começa <em>à mesa.</em></p>
+      <div class="hero__actions">
+        <a class="hero__cta hero__cta--primary" href="#cardapio">Ver cardápio <span aria-hidden="true">↗</span></a>
+        <button class="hero__cta hero__cta--secondary" type="button" data-open-reservation aria-haspopup="dialog" aria-controls="reservation-dialog" aria-describedby="reservation-status">Reservar uma mesa</button>
+      </div>
+      <p id="reservation-status" class="hero__reservation-status">Todos os dias, das 11h às 23h30.</p>
+    </div>
+</section>
+<div class="brand-bridge" role="img" aria-label="Emblema do Pepe Nero em três dimensões">
+  <div class="brand-bridge__line" aria-hidden="true"></div>
+  <div class="brand-bridge__stage">
+    <div class="brand-bridge__fallback" aria-hidden="true"><img src="assets/brand-emblem.svg" alt="" width="1200" height="600"></div>
+    <canvas class="brand-bridge__canvas" aria-hidden="true"></canvas>
+  </div>
+  <div class="brand-bridge__line" aria-hidden="true"></div>
+</div>
+<section id="nossa-cozinha" class="introduction" aria-labelledby="introduction-title">
+<div class="introduction__content">
+<p class="eyebrow">GASTRONOMIA ITALIANA</p>
+<h2 id="introduction-title">Conheça o <em>Pepe Nero</em></h2>
+<p class="introduction__copy">Um convite para saborear a culinária italiana e compartilhar bons momentos à mesa. Conheça nossos pratos e pizzas e escolha o sabor do seu próximo encontro.</p>
+<p class="introduction__signature" lang="it">Buon appetito! 🍝🍷</p>
+<button class="introduction__button" type="button" data-open-reservation aria-haspopup="dialog" aria-controls="reservation-dialog">Reservar uma mesa <span aria-hidden="true">↗</span></button>
+</div>
+<div class="house-visuals"><div id="house-gallery" class="house-gallery" hidden><figure id="house-salon" class="house-gallery__main" hidden></figure><div class="house-gallery__complements"><figure id="house-table" hidden></figure><figure id="house-detail" hidden></figure></div></div><div class="house-video"><div class="introduction__portrait">
+<video class="introduction__video" muted loop playsinline preload="metadata" poster="assets/gastronomia-poster.jpg" aria-label="Vídeo da gastronomia do Pepe Nero">
+<source src="assets/pepe-nero-gastronomia.mp4" type="video/mp4">
+Seu navegador não suporta a reprodução deste vídeo.
+</video>
+</div></div></div>
+</section>
+<section id="cardapio" class="specialties specialties--starters" aria-labelledby="specialties-title">
+<header class="specialties__header"><div><h2 id="specialties-title">Entradas</h2></div><a class="menu-view-link" href="?modo=mesa#cardapio">Modo de consulta para mesas ↗</a></header>
+<div class="dishes">
+<article class="dish" data-product="crostini-misto">
+  <img class="dish__image" src="assets/optimized/crostini-misto-800.jpg" srcset="assets/optimized/crostini-misto-400.jpg 400w, assets/optimized/crostini-misto-800.jpg 800w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Crostini misto servido em uma tábua de madeira" width="800" height="538" loading="lazy" decoding="async">
+  <div class="dish__heading"><h3>Crostini misto</h3><span>R$ 30,00</span></div>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Crostini misto ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+<article class="dish" data-product="bruschetta-camarao">
+  <img class="dish__image" src="assets/optimized/bruschetta-camarao-657.jpg" srcset="assets/optimized/bruschetta-camarao-400.jpg 400w, assets/optimized/bruschetta-camarao-657.jpg 657w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Bruschettas de camarão servidas em uma tábua" width="657" height="727" loading="lazy" decoding="async">
+  <div class="dish__heading"><h3>Bruschetta de camarão</h3><span>R$ 38,00</span></div>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Bruschetta de camarão ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+<article class="dish" data-product="polenta-funghi-gorgonzola">
+  <img class="dish__image" src="assets/optimized/polenta-funghi-gorgonzola-582.jpg" srcset="assets/optimized/polenta-funghi-gorgonzola-400.jpg 400w, assets/optimized/polenta-funghi-gorgonzola-582.jpg 582w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Polenta cremosa com funghi e gorgonzola" width="582" height="382" loading="lazy" decoding="async">
+  <div class="dish__heading"><h3>Polenta funghi e gorgonzola</h3><span>R$ 32,00</span></div>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Polenta funghi e gorgonzola ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+<article class="dish" data-product="burrata">
+  <img class="dish__image dish__image--burrata" src="assets/optimized/burrata-768.jpg" srcset="assets/optimized/burrata-400.jpg 400w, assets/optimized/burrata-768.jpg 768w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Burrata com pesto, folhas verdes e tomates" width="768" height="730" loading="lazy" decoding="async">
+  <div class="dish__heading"><h3>Burrata serve duas pessoas</h3><span>R$ 74,00</span></div>
+  <p>Burrata (queijo de búfala) acompanhada de tomate confit, folha de rúcula, pesto de manjericão e torradas.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Burrata serve duas pessoas ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+</div></section>
+<section id="pratos-principais" class="specialties specialties--mains" aria-labelledby="mains-title">
+  <header class="specialties__header"><div><h2 id="mains-title">Pratos <em>principais</em></h2></div></header>
+  <div class="dishes">
+    <article class="dish" data-product="risoto-funghi">
+      <img class="dish__image" src="assets/optimized/risoto-funghi-800.jpg" srcset="assets/optimized/risoto-funghi-400.jpg 400w, assets/optimized/risoto-funghi-800.jpg 800w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Risoto funghi" width="800" height="533" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Risoto funghi</h3><span>R$ 52,00</span></div>
+      <p>Risoto de funghi.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Risoto funghi ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="risotto-camarao">
+      <img class="dish__image" src="assets/optimized/risotto-camarao-800.jpg" srcset="assets/optimized/risotto-camarao-400.jpg 400w, assets/optimized/risotto-camarao-800.jpg 800w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Risotto de camarão" width="800" height="533" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Risotto de camarão</h3><span>R$ 59,00</span></div>
+      <p>Risoto de camarão.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Risotto de camarão ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="scaloppa-file-mignon">
+      <img class="dish__image" src="assets/optimized/scaloppa-file-mignon-701.jpg" srcset="assets/optimized/scaloppa-file-mignon-400.jpg 400w, assets/optimized/scaloppa-file-mignon-701.jpg 701w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Scaloppa filé mignon" width="701" height="424" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Scaloppa filé mignon</h3><span>R$ 68,00</span></div>
+      <p>Scaloppa de filé mignon com funghi e gorgonzola, acompanhada de massa ao próprio molho.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Scaloppa filé mignon ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="picanha-suina">
+      <img class="dish__image" src="assets/optimized/picanha-suina-750.jpg" srcset="assets/optimized/picanha-suina-400.jpg 400w, assets/optimized/picanha-suina-750.jpg 750w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Picanha suína" width="750" height="497" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Picanha suína</h3><span>R$ 56,00</span></div>
+      <p>Picanha suína com arroz com brócolis e batatas assadas.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Picanha suína ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="picanha-suina-duas-pessoas">
+      <img class="dish__image" src="assets/optimized/picanha-suina-duas-pessoas-750.jpg" srcset="assets/optimized/picanha-suina-duas-pessoas-400.jpg 400w, assets/optimized/picanha-suina-duas-pessoas-750.jpg 750w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Picanha suína serve 2 pessoas" width="750" height="497" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Picanha suína serve 2 pessoas</h3><span>R$ 110,00</span></div>
+      <p>Picanha suína com arroz com brócolis e batatas assadas.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Picanha suína serve 2 pessoas ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="risotto-caprese-burrata">
+      <img class="dish__image dish__image--portrait" src="assets/optimized/risotto-caprese-burrata-525.jpg" srcset="assets/optimized/risotto-caprese-burrata-400.jpg 400w, assets/optimized/risotto-caprese-burrata-525.jpg 525w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Risotto caprese com burrata vegetariano" width="525" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Risotto caprese com burrata vegetariano</h3><span>R$ 59,00</span></div>
+      <p>Risotto de tomate e tomatinho com burrata e molho pesto.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Risotto caprese com burrata vegetariano ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="lasanha-bolonhesa">
+      <img class="dish__image" src="assets/optimized/lasanha-bolonhesa-526.jpg" srcset="assets/optimized/lasanha-bolonhesa-400.jpg 400w, assets/optimized/lasanha-bolonhesa-526.jpg 526w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Lasanha à bolonhesa" width="526" height="526" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Lasanha à bolonhesa</h3><span>R$ 53,00</span></div>
+      <p>Lasanha de massa artesanal com molhos bolonhesa e bechamel.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Lasanha à bolonhesa ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="lasanha-carne">
+      <img class="dish__image" src="assets/optimized/lasanha-carne-704.jpg" srcset="assets/optimized/lasanha-carne-400.jpg 400w, assets/optimized/lasanha-carne-704.jpg 704w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Lasanha de carne" width="704" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Lasanha de carne</h3><span>R$ 55,00</span></div>
+      <p>Lasanha com massa artesanal e carne bovina desfiada.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Lasanha de carne ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="combo-risotto-funghi-arancini">
+      <img class="dish__image" src="assets/optimized/combo-risotto-funghi-arancini-612.jpg" srcset="assets/optimized/combo-risotto-funghi-arancini-400.jpg 400w, assets/optimized/combo-risotto-funghi-arancini-612.jpg 612w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Combo risotto funghi com arancini siciliani" width="612" height="612" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Combo risotto funghi com arancini siciliani</h3><span>R$ 59,00</span></div>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Combo risotto funghi com arancini siciliani ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="bife-chorizo">
+      <img class="dish__image" src="assets/optimized/bife-chorizo-700.jpg" srcset="assets/optimized/bife-chorizo-400.jpg 400w, assets/optimized/bife-chorizo-700.jpg 700w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Bife chorizo" width="700" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Bife chorizo</h3><span>R$ 78,00</span></div>
+      <p>Contrafilé acompanhado de tagliatelle artesanal pomodoro.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Bife chorizo ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="costela-bovina">
+      <img class="dish__image" src="assets/optimized/costela-bovina-600.jpg" srcset="assets/optimized/costela-bovina-400.jpg 400w, assets/optimized/costela-bovina-600.jpg 600w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Costela bovina" width="600" height="253" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Costela bovina</h3><span>R$ 65,00</span></div>
+      <p>Carne assada de vaca nelore com risoto de queijo.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Costela bovina ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="bacalhoada-chef">
+      <img class="dish__image" src="assets/optimized/bacalhoada-chef-800.jpg" srcset="assets/optimized/bacalhoada-chef-400.jpg 400w, assets/optimized/bacalhoada-chef-800.jpg 800w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Bacalhoada do chef" width="800" height="506" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Bacalhoada do chef</h3><span>R$ 63,00</span></div>
+      <p>Bacalhau com verduras, ovos, azeitonas pretas e azeite de oliva.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Bacalhoada do chef ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="tilapia">
+      <img class="dish__image dish__image--portrait" src="assets/optimized/tilapia-523.jpg" srcset="assets/optimized/tilapia-400.jpg 400w, assets/optimized/tilapia-523.jpg 523w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Tilápia" width="523" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Tilápia</h3><span>R$ 60,00</span></div>
+      <p>Tilápia grelhada, arroz cremoso de parmesão e batata.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Tilápia ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="parmegiana-frango">
+      <img class="dish__image" src="assets/optimized/parmegiana-frango-768.jpg" srcset="assets/optimized/parmegiana-frango-400.jpg 400w, assets/optimized/parmegiana-frango-768.jpg 768w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Parmegiana de frango" width="768" height="512" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Parmegiana de frango</h3><span>R$ 53,00</span></div>
+      <p>Acompanhada de macarrão ao molho de tomate.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Parmegiana de frango ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="parmegiana-file">
+      <img class="dish__image" src="assets/optimized/parmegiana-file-768.jpg" srcset="assets/optimized/parmegiana-file-400.jpg 400w, assets/optimized/parmegiana-file-768.jpg 768w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Parmegiana de filé" width="768" height="512" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Parmegiana de filé</h3><span>R$ 69,00</span></div>
+      <p>Acompanhada de macarrão ao molho de tomate caseiro.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Parmegiana de filé ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="lasanha-camarao">
+      <img class="dish__image" src="assets/optimized/lasanha-camarao-800.jpg" srcset="assets/optimized/lasanha-camarao-400.jpg 400w, assets/optimized/lasanha-camarao-800.jpg 800w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Lasanha de camarão" width="800" height="450" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Lasanha de camarão</h3><span>R$ 57,00</span></div>
+      <p>Lasanha de massa artesanal recheada com molho de camarão e bechamel.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Lasanha de camarão ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="salmao-chileno">
+      <img class="dish__image" src="assets/optimized/salmao-chileno-800.jpg" srcset="assets/optimized/salmao-chileno-400.jpg 400w, assets/optimized/salmao-chileno-800.jpg 800w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Salmão chileno" width="800" height="533" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Salmão chileno</h3><span>R$ 72,00</span></div>
+      <p>Salmão chileno grelhado com risoto de açafrão.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Salmão chileno ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+  </div>
+</section>
+<section id="pratos-exclusivos" class="specialties specialties--mains specialties--exclusives" aria-labelledby="exclusives-title">
+  <header class="specialties__header"><div><h2 id="exclusives-title">Pratos <em>exclusivos</em></h2></div></header>
+  <div class="dishes">
+    <article class="dish" data-product="extase-queijos">
+      <img class="dish__image" src="assets/optimized/extase-queijos-506.jpg" srcset="assets/optimized/extase-queijos-400.jpg 400w, assets/optimized/extase-queijos-506.jpg 506w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Êxtase de queijos" width="506" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Êxtase de queijos</h3><span>R$ 82,00</span></div>
+      <p>Filé mignon ao molho de queijos com risoto de parmesão e casquinha de parmesão.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Êxtase de queijos ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="extase-queijos-duas-pessoas">
+      <img class="dish__image" src="assets/optimized/extase-queijos-506.jpg" srcset="assets/optimized/extase-queijos-400.jpg 400w, assets/optimized/extase-queijos-506.jpg 506w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Êxtase de queijos — Serve 2 pessoas" width="506" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Êxtase de queijos — Serve 2 pessoas</h3><span>R$ 148,00</span></div>
+      <p>Filé mignon ao molho de queijos com risoto de parmesão e casquinha de parmesão.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Êxtase de queijos — Serve 2 pessoas ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="bacalhau-polenta">
+      <img class="dish__image" src="assets/optimized/bacalhau-polenta-589.jpg" srcset="assets/optimized/bacalhau-polenta-400.jpg 400w, assets/optimized/bacalhau-polenta-589.jpg 589w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Bacalhau com polenta" width="589" height="339" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Bacalhau com polenta</h3><span>R$ 65,00</span></div>
+      <p>Bacalhau em posta com polenta mole, molho de tomate e legumes picadinhos.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Bacalhau com polenta ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="file-mare-monti">
+      <img class="dish__image" src="assets/optimized/file-mare-monti-700.jpg" srcset="assets/optimized/file-mare-monti-400.jpg 400w, assets/optimized/file-mare-monti-700.jpg 700w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Filé mare e monti" width="700" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Filé mare e monti</h3><span>R$ 78,00</span></div>
+      <p>Filé mignon com massa e espeto de camarão. Serve 1 pessoa.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Filé mare e monti ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="tilapia-recheada-camarao">
+      <img class="dish__image dish__image--tilapia-recheada" src="assets/optimized/tilapia-recheada-camarao-394.jpg" srcset="assets/optimized/tilapia-recheada-camarao-394.jpg 394w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Tilápia recheada com camarão" width="394" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Tilápia recheada com camarão</h3><span>R$ 60,00</span></div>
+      <p>Filé de tilápia recheada com camarão, acompanhado de arroz cremoso de parmesão e batata.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Tilápia recheada com camarão ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="parmegiana-file-mignon">
+      <img class="dish__image" src="assets/optimized/parmegiana-file-mignon-800.jpg" srcset="assets/optimized/parmegiana-file-mignon-400.jpg 400w, assets/optimized/parmegiana-file-mignon-800.jpg 800w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Parmegiana filé mignon" width="800" height="600" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Parmegiana filé mignon</h3><span>R$ 69,00</span></div>
+      <p>Parmegiana de filé acompanhada de massa artesanal ao molho de tomate.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Parmegiana filé mignon ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="file-mare-monti-duas-pessoas">
+      <img class="dish__image" src="assets/optimized/file-mare-monti-700.jpg" srcset="assets/optimized/file-mare-monti-400.jpg 400w, assets/optimized/file-mare-monti-700.jpg 700w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Filé mare e monti — Serve 2 pessoas" width="700" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Filé mare e monti — Serve 2 pessoas</h3><span>R$ 150,00</span></div>
+      <p>Filé mignon com massa artesanal e espeto de camarão. Serve 2 pessoas.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Filé mare e monti — Serve 2 pessoas ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+  </div>
+</section>
+<section id="pizzas" class="specialties specialties--mains specialties--pizzas" aria-labelledby="pizzas-title">
+  <header class="specialties__header"><div><h2 id="pizzas-title">Pizzas</h2></div></header>
+  <div class="pizzas__overview"><figure><img src="assets/optimized/pizza-800.jpg" srcset="assets/optimized/pizza-400.jpg 400w, assets/optimized/pizza-800.jpg 800w" sizes="(max-width: 700px) 84vw, 40vw" alt="Foto geral de pizza do cardápio" width="800" height="534" loading="lazy" decoding="async"><figcaption>Imagem ilustrativa da categoria. Os ingredientes variam conforme o sabor.</figcaption></figure><div><h3>Do seu jeito.</h3><p>Escolha um sabor ou combine duas metades. O valor da pizza com dois sabores será consultado com o restaurante.</p><button class="pizza-combine" type="button" data-open-pizza aria-haspopup="dialog" aria-controls="pizza-dialog">Escolher dois sabores <span aria-hidden="true">+</span></button></div></div><div class="dishes">
+    <article class="dish" data-product="pizza-margherita">
+      <div class="dish__heading"><h3>Margherita</h3><span>R$ 52,00</span></div>
+      <p>Muçarela, molho de tomate italiano, fatias de tomate e manjericão.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Margherita ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="pizza-calabresa">
+      <div class="dish__heading"><h3>Calabresa</h3><span>R$ 52,00</span></div>
+      <p>Muçarela, molho de tomate italiano, calabresa e orégano.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Calabresa ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="pizza-frango-catupiry">
+      <div class="dish__heading"><h3>Frango Catupiry</h3><span>R$ 52,00</span></div>
+      <p>Muçarela, molho de tomate italiano, frango desfiado e Catupiry.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Frango Catupiry ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="pizza-portuguesa">
+      <div class="dish__heading"><h3>Portuguesa</h3><span>R$ 52,00</span></div>
+      <p>Muçarela, calabresa, molho de tomate italiano, ovo, cebola, pimentão e azeitona.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Portuguesa ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="pizza-peperoni">
+      <div class="dish__heading"><h3>Peperoni</h3><span>R$ 58,00</span></div>
+      <p>Muçarela, molho de tomate italiano e peperoni.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Peperoni ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="pizza-vegetariana">
+      <div class="dish__heading"><h3>Vegetariana</h3><span>R$ 52,00</span></div>
+      <p>Muçarela, molho de tomate italiano, abobrinha, berinjela, tomates e cebola grelhados.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Vegetariana ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="pizza-file-mignon">
+      <div class="dish__heading"><h3>Filé mignon</h3><span>R$ 68,00</span></div>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Filé mignon ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="pizza-carpineti">
+      <div class="dish__heading"><h3>Carpineti</h3><span>R$ 58,00</span></div>
+      <p>Bacon e parmesão.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Carpineti ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="pizza-bacalhau">
+      <div class="dish__heading"><h3>Bacalhau</h3><span>R$ 68,00</span></div>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Bacalhau ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+  </div>
+</section>
+<section id="sobremesas" class="specialties specialties--mains specialties--desserts" aria-labelledby="desserts-title">
+  <header class="specialties__header"><div><h2 id="desserts-title">Sobremesas</h2></div></header>
+  <div class="dishes">
+    <article class="dish" data-product="tiramisu">
+      <img class="dish__image" src="assets/optimized/tiramisu-800.jpg" srcset="assets/optimized/tiramisu-400.jpg 400w, assets/optimized/tiramisu-800.jpg 800w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Tiramisú servido em uma taça sobre prato escuro" width="800" height="533" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Tiramisú</h3><span>R$ 22,00</span></div>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Tiramisú ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="panna-cotta">
+      <img class="dish__image" src="assets/optimized/panna-cotta-800.jpg" srcset="assets/optimized/panna-cotta-400.jpg 400w, assets/optimized/panna-cotta-800.jpg 800w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Panna Cotta com frutas vermelhas sobre um prato azul" width="800" height="600" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Panna Cotta</h3><span>R$ 22,00</span></div>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Panna Cotta ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="cheesecake">
+      <img class="dish__image" src="assets/optimized/cheesecake-800.jpg" srcset="assets/optimized/cheesecake-400.jpg 400w, assets/optimized/cheesecake-800.jpg 800w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Cheesecake com calda vermelha servido em um prato branco" width="800" height="533" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Cheesecake</h3><span>R$ 22,00</span></div>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Cheesecake ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+  </div>
+</section>
+<section id="bebidas" class="specialties specialties--mains specialties--drinks" aria-labelledby="drinks-title">
+  <header class="specialties__header"><div><h2 id="drinks-title">Bebidas</h2></div></header>
+  <div class="dishes">
+    <article class="dish" data-product="agua">
+      <img class="dish__image" src="assets/optimized/agua-700.jpg" srcset="assets/optimized/agua-400.jpg 400w, assets/optimized/agua-700.jpg 700w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Água" width="700" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Água</h3><span>R$ 4,00</span></div>
+      <p>500 ml</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Água ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="coca-cola">
+      <img class="dish__image" src="assets/optimized/coca-cola-700.jpg" srcset="assets/optimized/coca-cola-400.jpg 400w, assets/optimized/coca-cola-700.jpg 700w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Coca Cola" width="700" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Coca Cola</h3><span>R$ 7,00</span></div>
+      <p>310 ml</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Coca Cola ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="coca-cola-zero">
+      <img class="dish__image" src="assets/optimized/coca-cola-zero-500.jpg" srcset="assets/optimized/coca-cola-zero-400.jpg 400w, assets/optimized/coca-cola-zero-500.jpg 500w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Coca Cola Zero" width="500" height="500" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Coca Cola Zero</h3><span>R$ 7,00</span></div>
+      <p>310 ml</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Coca Cola Zero ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="fanta-laranja">
+      <img class="dish__image" src="assets/optimized/fanta-laranja-700.jpg" srcset="assets/optimized/fanta-laranja-400.jpg 400w, assets/optimized/fanta-laranja-700.jpg 700w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Fanta Laranja" width="700" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Fanta Laranja</h3><span>R$ 7,00</span></div>
+      <p>310 ml</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Fanta Laranja ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="fanta-guarana">
+      <img class="dish__image" src="assets/optimized/fanta-guarana-700.jpg" srcset="assets/optimized/fanta-guarana-400.jpg 400w, assets/optimized/fanta-guarana-700.jpg 700w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Fanta Guaraná" width="700" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Fanta Guaraná</h3><span>R$ 7,00</span></div>
+      <p>310 ml</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Fanta Guaraná ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="sprite">
+      <img class="dish__image" src="assets/optimized/sprite-400.jpg" srcset="assets/optimized/sprite-400.jpg 400w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Sprite" width="400" height="400" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Sprite</h3><span>R$ 7,00</span></div>
+      <p>310 ml</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Sprite ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="espumante-garibaldi-vero-brut">
+      <img class="dish__image" src="assets/optimized/espumante-garibaldi-vero-brut-350.jpg" srcset="assets/optimized/espumante-garibaldi-vero-brut-350.jpg 350w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Espumante Garibaldi Vero Brut 750 ml" width="350" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Espumante Garibaldi Vero Brut 750 ml</h3><span>R$ 65,00</span></div>
+      <p>Garrafa de espumante.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Espumante Garibaldi Vero Brut 750 ml ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+    <article class="dish" data-product="lambrusco-cella-tinto">
+      <img class="dish__image" src="assets/optimized/lambrusco-cella-tinto-700.jpg" srcset="assets/optimized/lambrusco-cella-tinto-400.jpg 400w, assets/optimized/lambrusco-cella-tinto-700.jpg 700w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 40vw, 20vw" alt="Lambrusco Cella Tinto 750 ml" width="700" height="700" loading="lazy" decoding="async">
+      <div class="dish__heading"><h3>Lambrusco Cella Tinto 750 ml</h3><span>R$ 60,00</span></div>
+      <p>Garrafa.</p>
+      <div class="dish__add-wrap"><button class="dish__add" type="button" data-add-to-cart aria-label="Adicionar Lambrusco Cella Tinto 750 ml ao carrinho">Adicionar ao carrinho <span aria-hidden="true">+</span></button></div>
+</article>
+  </div>
+</section>
+<section id="localizacao" class="location" aria-labelledby="location-title">
+  <figure id="location-facade" class="location__facade" hidden></figure><div class="location__content">
+  <div class="location__topline"><p class="eyebrow">NOSSO ENDEREÇO</p><span class="location__city">Planaltina · DF</span></div>
+  <div class="location__intro">
+    <h2 id="location-title">Esperamos<br><em>por você.</em></h2>
+    <span class="location__pin" aria-hidden="true"><svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+  </div>
+  <div class="location__details">
+    <address id="restaurant-address"><strong>Praça Coronel Salviano Monteiro</strong><br>Quadra 56 Lote 2, St. Tradicional<br>Planaltina, Brasília - DF, 73330-151</address>
+    <p class="location__hours">Todos os dias, das 11h às 23h30.</p>
+    <div class="location__actions">
+      <a id="location-directions" href="https://www.google.com/maps/dir/?api=1&amp;destination=Pra%C3%A7a+Coronel+Salviano+Monteiro%2C+Quadra+56+Lote+2%2C+St.+Tradicional%2C+Planaltina%2C+Bras%C3%ADlia+-+DF%2C+73330-151" target="_blank" rel="noopener noreferrer"><span>Como chegar<small>Abrir no Google Maps</small></span><span class="location__arrow" aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+<footer class="contact-footer" aria-labelledby="contact-title">
+  <div class="contact-footer__panel">
+  <div class="contact-footer__heading"><p class="eyebrow"><span aria-hidden="true"></span> O SABOR DE ESTAR JUNTO</p><h2 id="contact-title">A conversa<br>continua <em>à mesa.</em></h2><p class="contact-footer__description">Fale com a gente ou acompanhe os sabores e os momentos do Pepe Nero.</p></div>
+  <div class="contact-footer__links">
+    <a href="https://wa.me/5561995530777" target="_blank" rel="noopener noreferrer" aria-label="Falar com Pepe Nero pelo WhatsApp: (61) 99553-0777">
+      <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.8 7.3L3 20l1.2-4.7A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8.5 7.5c-.5 0-1 1-1 1.5 0 3 4 7 7 7 .5 0 1.5-.5 1.5-1l-2-1.5-1 .7c-1.4-.6-2.6-1.8-3.2-3.2l.7-1-1.5-2.5Z"/></svg>
+      <span><span class="contact-footer__label">FALE COM A GENTE</span><strong>WhatsApp</strong><small>(61) 99553-0777</small></span><span class="contact-footer__arrow" aria-hidden="true">↗</span>
+    </a>
+    <a href="https://www.instagram.com/pepeneroristorante/" target="_blank" rel="noopener noreferrer" aria-label="Pepe Nero no Instagram: @pepeneroristorante">
+      <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
+      <span><span class="contact-footer__label">UM POUCO DO NOSSO DIA</span><strong>Instagram</strong><small>@pepeneroristorante</small></span><span class="contact-footer__arrow" aria-hidden="true">↗</span>
+    </a>
+  </div>
+  </div>
+  <div class="contact-footer__signature"><div class="contact-footer__baseline"><span>RISTORANTE E PIZZERIA</span><span>PLANALTINA · BRASÍLIA</span></div></div>
+</footer>
+<button class="cart-toggle" id="cart-toggle" type="button" aria-haspopup="dialog" aria-controls="cart-dialog" aria-label="Abrir carrinho, 0 itens">
+  <svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg>
+  <span>Carrinho</span><span class="cart-toggle__count" id="cart-count">0</span>
+  <span class="cart-toggle__total" id="cart-toggle-total" hidden></span>
+</button>
+<dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+  <div class="cart-panel">
+    <header class="cart-header">
+      <div><p class="cart-eyebrow">PEPE NERO</p><h2 id="cart-title">Seu carrinho</h2></div>
+      <button class="cart-close" type="button" data-close-cart aria-label="Fechar carrinho" autofocus>×</button>
+    </header>
+    <ol class="order-steps" aria-label="Etapas do pedido" hidden><li data-step="cart" aria-current="step"><span>1</span>Carrinho</li><li data-step="data"><span>2</span>Dados do pedido</li><li data-step="review"><span>3</span>Revisão</li><li><span>4</span>WhatsApp</li></ol>
+    <div class="cart-body">
+      <section id="cart-selection" aria-label="Itens do carrinho">
+        <div class="cart-empty" id="cart-empty"><p>Seu carrinho está vazio.</p><span>Escolha seus favoritos no cardápio.</span></div>
+        <ul class="cart-items" id="cart-items" aria-label="Produtos no carrinho"></ul>
+        <div id="cart-order-fields"><label class="cart-notes" for="cart-notes">Observações <span>(opcional)</span><textarea id="cart-notes" rows="2" maxlength="1000" autocomplete="off" placeholder="Alguma observação sobre os itens?"></textarea></label></div>
+      </section>
+      <section id="order-data" hidden aria-label="Dados do pedido">
+        <form id="order-details-form" autocomplete="off" novalidate>
+          <label class="order-field" for="order-name">Seu nome<input id="order-name" name="customerName" type="text" required maxlength="100" autocomplete="off" placeholder="Como podemos chamar você?"></label>
+          <fieldset class="order-group"><legend>Como podemos atender?</legend><div id="order-mode-choice" hidden><label class="order-field" for="order-mode">Modalidade<select id="order-mode"></select></label></div><p id="order-mode-fallback" class="order-hint">Atendimento a combinar pelo WhatsApp.</p>
+            <div id="order-delivery" hidden><div class="order-fields-grid">
+              <label class="order-field order-field--full" for="order-street">Rua<input id="order-street" name="street" type="text" maxlength="150" autocomplete="off"></label>
+              <div><label class="order-field" for="order-number">Número<input id="order-number" name="number" type="text" maxlength="20" autocomplete="off"></label><label class="order-check"><input id="order-no-number" type="checkbox">Sem número</label></div>
+              <label class="order-field" for="order-neighborhood">Bairro<input id="order-neighborhood" name="neighborhood" type="text" maxlength="100" autocomplete="off" aria-describedby="order-delivery-hint"></label>
+              <label class="order-field" for="order-city">Cidade<input id="order-city" name="city" type="text" maxlength="100" autocomplete="off"></label>
+              <label class="order-field" for="order-complement">Complemento <span>(opcional)</span><input id="order-complement" name="complement" type="text" maxlength="150" autocomplete="off"></label>
+              <label class="order-field order-field--full" for="order-reference">Referência <span>(opcional)</span><input id="order-reference" name="reference" type="text" maxlength="150" autocomplete="off"></label>
+            </div><p id="order-delivery-hint" class="order-hint" role="status"></p></div>
+            <div id="order-pickup" class="order-pickup" hidden><h3>Retirada no Pepe Nero</h3><div id="order-pickup-address"></div><a id="order-pickup-directions" data-directions target="_blank" rel="noopener noreferrer">Como chegar <span aria-hidden="true">↗</span></a></div>
+          </fieldset>
+          <fieldset class="order-group"><legend>Forma de pagamento</legend><div id="order-payment-choice" hidden><label class="order-field" for="order-payment">Sua preferência<select id="order-payment"></select></label><p class="order-hint">A escolha informa sua preferência. Não há pagamento pelo site.</p></div><p id="order-payment-fallback" class="order-hint">Pagamento a combinar pelo WhatsApp.</p>
+            <div id="order-cash" hidden><label class="order-field" for="order-change">Precisa de troco?<select id="order-change"><option value="">Selecione</option><option value="no">Não</option><option value="yes">Sim</option></select></label><label id="order-cash-amount" class="order-field" for="order-cash-value" hidden>Troco para (R$)<input id="order-cash-value" type="text" inputmode="decimal" maxlength="15" autocomplete="off" placeholder="Ex.: 100,00" aria-describedby="order-cash-help"></label><p id="order-cash-help" class="order-hint"></p></div>
+          </fieldset>
+          <label class="order-field" for="order-notes">Observações <span>(opcional)</span><textarea id="order-notes" rows="3" maxlength="1000" autocomplete="off" placeholder="Alguma observação sobre o pedido?"></textarea></label>
+          <p id="order-validation" class="order-validation" role="alert"></p>
+        </form>
+      </section>
+      <section id="cart-review" hidden aria-labelledby="cart-review-title"><h3 id="cart-review-title" tabindex="-1">Confira seu pedido</h3><ul id="order-review-items" class="order-review-items" aria-label="Produtos da solicitação"></ul><dl id="order-review-data" class="order-review-data"></dl><dl id="order-review-amounts" class="order-review-amounts"></dl><div class="order-review-edit"><button type="button" id="cart-edit" class="cart-edit">Editar itens</button><button type="button" id="order-edit-data" class="cart-edit">Editar dados</button></div></section>
+    </div>
+    <p class="cart-sr-only" id="cart-dialog-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    <footer class="cart-footer">
+      <div class="cart-total"><span id="cart-total-label">Subtotal dos produtos</span><strong id="cart-total">R$ 0,00</strong></div>
+      <p id="cart-consult" class="cart-policy" hidden>Pizza com dois sabores a consultar, fora do subtotal.</p>
+      <button type="button" id="cart-review-button" class="cart-primary" disabled>Continuar</button>
+      <a id="cart-send" class="cart-primary" target="_blank" rel="noopener noreferrer" hidden>Continuar no WhatsApp ↗</a>
+      <p id="order-confirmation" class="cart-handoff" hidden>A solicitação será confirmada pelo restaurante no WhatsApp.</p>
+      <button id="order-back" class="cart-continue" type="button" hidden>Voltar ao carrinho</button>
+      <button class="cart-continue" type="button" data-close-cart>Continuar escolhendo</button>
+    </footer>
+  </div>
+</dialog>
+<p class="cart-toast" id="cart-status" role="status" aria-live="polite" aria-atomic="true"></p>
+<dialog id="pizza-dialog" class="reservation-dialog" aria-labelledby="pizza-title"><header class="reservation-header"><div><p class="reservation-eyebrow">DUAS METADES</p><h2 id="pizza-title">Sua pizza, dois sabores.</h2></div><button class="reservation-close" type="button" data-close-pizza aria-label="Fechar escolha de pizza">×</button></header><form id="pizza-form"><p class="reservation-policy" id="pizza-price-help">Selecione dois sabores diferentes. O preço da combinação está sujeito à consulta; os preços do cardápio são dos sabores únicos.</p><div class="reservation-fields"><label>Primeira metade<select id="pizza-first" required aria-describedby="pizza-price-help"></select></label><label>Segunda metade<select id="pizza-second" required aria-describedby="pizza-price-help"></select></label></div><button class="reservation-primary" type="submit">Adicionar combinação a consultar</button></form></dialog>
+<dialog class="reservation-dialog" id="reservation-dialog" aria-labelledby="reservation-title">
+  <header class="reservation-header">
+    <div><p class="reservation-eyebrow">UM LUGAR À SUA ESPERA</p><h2 id="reservation-title">Reservar uma mesa</h2></div>
+    <button class="reservation-close" type="button" data-close-reservation aria-label="Fechar reservas" autofocus>×</button>
+  </header>
+  <p class="reservation-hours">Todos os dias · 11h às 23h30 <span>Horário de Brasília</span></p>
+  <form id="reservation-form" data-whatsapp="5561995530777">
+    <p class="reservation-policy">Os dados preenchidos preparam a solicitação que você pode enviar ao restaurante pelo WhatsApp.</p>
+    <div class="reservation-fields">
+      <label>Seu nome<input id="reservation-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="100" placeholder="Como podemos chamar você?" required></label>
+      <label>Telefone / WhatsApp<input id="reservation-phone" name="phone" type="tel" autocomplete="tel" maxlength="24" placeholder="(00) 00000-0000" required aria-describedby="reservation-phone-help"><small id="reservation-phone-help">Inclua o DDD.</small></label>
+      <label>Data<input id="reservation-date" name="date" type="date" required></label>
+      <label>Horário<select id="reservation-time" name="time" required disabled aria-describedby="reservation-time-help"><option value="">Escolha uma data primeiro</option></select><small id="reservation-time-help" role="status"></small></label>
+      <label class="reservation-guests">Número de pessoas<input id="reservation-guests" name="guests" type="number" min="1" step="1" inputmode="numeric" value="2" required></label>
+      <label class="reservation-occasion">Ocasião <span>(opcional)</span><select id="reservation-occasion" name="occasion"><option value="">Selecione, se desejar</option><option>Aniversário</option><option>Encontro</option><option>Grupo</option><option>Outra ocasião</option></select><small>Conte os detalhes nas observações. Disponibilidade sujeita à confirmação, sem serviços adicionais garantidos.</small></label>
+      <label class="reservation-notes">Observações <span>(opcional)</span><textarea id="reservation-notes" name="notes" rows="2" maxlength="500" placeholder="Ocasião especial ou alguma preferência?"></textarea></label>
+    </div>
+    <p class="reservation-policy">A solicitação está sujeita à disponibilidade e à confirmação do restaurante.</p>
+    <button class="reservation-primary" type="submit">Revisar solicitação <span aria-hidden="true">→</span></button>
+  </form>
+  <section id="reservation-review" class="reservation-review" aria-labelledby="reservation-review-title" hidden>
+    <h3 id="reservation-review-title" tabindex="-1">Revise sua solicitação</h3>
+    <dl id="reservation-summary"></dl>
+    <p class="reservation-policy">Sua mesa estará reservada após a confirmação do restaurante.</p>
+    <a id="reservation-send" class="reservation-primary" target="_blank" rel="noopener noreferrer" hidden>Solicitar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+    <p id="reservation-unconfigured" class="reservation-policy">O envio de solicitações estará disponível em breve. Você pode copiar os dados abaixo.</p>
+    <button id="reservation-copy" class="reservation-primary" type="button">Copiar solicitação</button>
+    <button id="reservation-edit" class="reservation-edit" type="button">Editar dados</button>
+    <textarea id="reservation-copy-fallback" class="reservation-copy-fallback" aria-label="Solicitação de reserva para copiar" readonly hidden></textarea>
+  </section>
+  <p id="reservation-feedback" class="reservation-feedback" role="status" aria-live="polite"></p>
+</dialog>
+<script src="commercial-config.js" defer></script><script src="restaurant-media.js" defer></script><script src="order-flow.js" defer></script><script src="improvements.js" defer></script><script src="cart.js" defer></script><script src="hero.js" defer></script><script src="reservations.js" defer></script><script src="location.js" defer></script><script type="module" src="brand-emblem.js"></script></body></html>
+
+
+
